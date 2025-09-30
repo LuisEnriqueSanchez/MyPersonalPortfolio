@@ -32,11 +32,11 @@ description:    >
   #with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
-tagline:    Aerospace engineer            # Esto aparece como subtítulo en la página principal 
+tagline:    Aerospace engineer 
                         #Change `tagline` in `_config.yml`
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [Mechanical design, Aerospace engineering, CFD]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -46,12 +46,14 @@ logo:                  /assets/img/logo.png
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:              Luis Enrique Sánchez #<firstname> <lastname>
+  email:             luisensangut@gmail.com #<mail@domain.tld>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
+# Son los enlaces que aparecen en la barra lateral, que en este caso
+# son debajo del logo y el título en la pantalla principal.
 menu:
   - title:             Example
     url:               /example/
