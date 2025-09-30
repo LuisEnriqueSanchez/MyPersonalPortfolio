@@ -32,6 +32,8 @@ description:    >
   #with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
+# Es una descrupción corta que aparece en la barra lateral, es la de debajo del título.
+# En la página principal, aparece debajo del logo.
 tagline:    Aerospace engineer 
                         #Change `tagline` in `_config.yml`
 
