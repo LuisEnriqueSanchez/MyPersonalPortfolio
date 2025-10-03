@@ -12,6 +12,11 @@
 # baseurl:               '/hydejack-starter-kit'
 
 
+
+
+
+
+
 # General settings
 # ---------------------------------------------------------------------------------------
 
@@ -32,8 +37,9 @@ description:    >
   #with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
-# Es una descrupción corta que aparece en la barra lateral, es la de debajo del título.
-# En la página principal, aparece debajo del logo.
+# Es una descripción corta que aparece en la barra lateral, es la de debajo del título.
+# En la página principal, aparece debajo del logo. Por que? Porque en la parte principal de la 
+# página eso se convierte en la barra lateral izq, de ahi la sidebar.
 tagline:    Aerospace engineer 
                         #Change `tagline` in `_config.yml`
 
@@ -43,7 +49,7 @@ keywords:              [Mechanical design, Aerospace engineering, CFD]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets\img\logo\White_logo_without_background.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -63,6 +69,8 @@ menu:
     url:               /docs/
   - title:             About
     url:               /about/
+  - title:             Portfolio
+    url:               /portfolio/ 
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -75,7 +83,7 @@ legal:
     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2024. All rights reserved.
+copyright:             © 2025. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -83,6 +91,10 @@ permalink:             /:categories/:year-:month-:day-:title/
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
 paginate_path:         /:num/
+
+
+
+
 
 
 # Theme
@@ -95,6 +107,10 @@ theme: jekyll-theme-hydejack
 # `jekyll-remote-theme` plugin (which is the case when using the legacy GitHub Pages pipeline).
 # This will fetch the `v9` branch of the public Hydejack repository on GitHub.
 # remote_theme: hydecorp/hydejack@v9
+
+
+
+
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
