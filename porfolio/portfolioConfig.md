@@ -1,5 +1,6 @@
 ---
 layout: list
-title: Blog
-permalink: /blog/
+title: Portfolio
+permalink: /portfolio/
 ---
+TESTING TEXT
