@@ -49,7 +49,7 @@ keywords:              [Mechanical design, Aerospace engineering, CFD]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets\img\logo\descarga (10)+.png
+logo:                  /assets/img/logo/descarga (10)+.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -320,7 +320,9 @@ collections:
     permalink:         /tag-:name/
     output:            true
 
-  projects:
+  projects: # this is the name for the directory _projects
+    path:             portfolio/_projects # with this, you can have the folder _projects inside another folder
+                                          # If you want to have the folder _projects at the root, you don't need to set 'path'.
     permalink:         /projects/:path/
     output:            true
 
