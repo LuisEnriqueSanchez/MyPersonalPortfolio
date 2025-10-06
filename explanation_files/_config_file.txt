@@ -1,0 +1,232 @@
+THIS FILE IS INTENDED TO BE THE EXPLANATION OF HOW THE WEBSITE IS CONSTRUTED.
+
+All information is from this link:https://hydejack.com/docs
+There are the main documents.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+                                                BASIC CONFIG
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+- Edit at the root: _config.yml 
+
+        Use URL direction only outside of GitHub
+
+- General settings
+
+        -Edit language
+
+        -Edit the title on the side bar. The side bar is the landing page because when you open
+        the contents, is shorted to the left. At that moments it is the side bar.
+
+        -Description used in metadata. The > symbol is for creating only one paragraph when it is uploaded to the web
+        and you can write in various lines. The compiler will understand the text as one continuous line. The markdown format
+        is to create italic, bold and links with the markdown format. 
+            - **bold text**
+            - *italic*
+            - `inline code`
+            - links is used:[text](link).
+        
+        -Tagline is used as a short description for the sidebar. In this case is placed under the title.
+
+        -keywords for the web
+
+        -logo is placed above the title. to include a photo you need to use the path of the file inside the root directory
+
+        - the author is just a name and email. It must be the same as in `_data/authors.yml`.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+                                                MAIN MENU
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+- menu
+
+    - Here is where the different sections of the web are created. These are links to other places. The title is what
+    is shown and the url is the path where the link points to. To run these path, is needed the directory of the path.
+    Inside the directory needs a main file "index.md" that is going to create the web. The directory could have inside 
+    directory such as post or media for photos or whatever.
+
+    The _post folder is a special folder. It is thought to be a blog-style post under the main directory. It is important
+    to have the _ before the name, that creates and pointer that is a special folder. This is shown inside the testing folder.
+
+    In Jekyll (web creator engine) the "_post" folder is special. The files inside must to be with this format YYYY-MM-DD-title.md.
+    Because the engine read them and automatically order them. Also inside each interior file, you could give the date inside the
+    front matter (the firts part of the file between ---) but this would be irrelevant for order, just be used for shown the date.
+
+    In the custom special folders such as _projects, the previous conditions are not appliable. The file names inside the folder
+    could have the name they want but if you want a automatic order, inside the front matter the date needs to be defined. Because 
+    the folder is not predefined as posting folder. It is really important for this case, that to be trated as a special folder
+    it needs to be defined as collection inside the _config.yml file. This is the structure:
+
+    "
+    collections:
+        myfolder:
+        output: true
+    "
+    The special custom folder shall be name as _myfolder
+
+    Summary:
+    - _posts is for blog posts and needs the date in the filename for Jekyll to work properly. is intended to ccreate date-based content
+    and specifically designed for blogs or news articles.
+    - Custom collections like _projects are more flexible and only use the front matter for dates if you want them. This case is for
+    general use such as projects, tutorials, case studies, etc.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+                                                  FOOTER
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+It is the section shown in the lowest part of the content shown in that moment. This links are referenced to the root folder and to 
+the license, notice and chanelog files. Each one content different types of legal aspects. I will not edit any of them
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+                                              REMAINING FILE
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The rest of the file is not critical.
+
+- copyright is the property
+- permalink: this creates the standard structure to name a permalink. A permalink is the permanent URLs (web addresses) 
+for your pages, posts, or collection items on your website. In Jekyll, permalinks control how the URLs are structured 
+and displayed in the browser.
+
+With that format, the URL will be /blog/2025-10-05-my-first-post/ for a file with these conditions:
+
+categories: blog
+date: 2025-10-05
+title: my-first-post
+
+- paginate: is the creation of the numnber of post per page on the blog area. When the number of blog entries are
+above the selected number, it will create a new page. The "/:num/" sets the URL for the extra pages.
+
+- theme: NOT TOUCHED
+
+- customisation:
+
+    -accent_image: Sets the background image for the sidebar.
+    -accent_color: Sets the main accent color for your site (used in the sidebar and highlights).
+    -theme_color: Sets the browser’s UI color (e.g., on mobile browsers). Defaults to accent_color if not set.
+
+    -google_fonts: Lets you load fonts from Google Fonts (commented out for privacy).
+    -font: Sets the main text font (commented out).
+    -font_heading: Sets the font for headings (commented out).
+    -font_code: Sets the font for code blocks (commented out).
+
+    - defaults:
+
+        Lets you set default values for specific folders or content types.For example, all pages under hyde/ 
+        get a specific accent color, theme color, and background.
+        
+        Files in assets and licenses are excluded from the sitemap(this is a XML file that list all the important pages of the website).
+        
+        You can set a default layout or enable comments for all posts (commented out).
+        
+        For collections like projects, featured_categories, and featured_tags, the SEO type is set to WebPage instead of BlogPosting.
+
+    - kramdown:
+
+        -math_engine: katex: Uses KaTeX to render math equations.
+        -math_engine_opts: {}: Extra options for KaTeX (empty by default).
+        -footnote_backlink: Sets the symbol used for footnote backlinks.
+
+- hydejack settings:
+
+    post_addons / project_addons: Control the order of extra content (like about, newsletter, related posts, comments) 
+    shown on blog posts and project pages.
+
+    no_mark_external: If true, external links won’t show an icon.
+
+    no_push_state: If true, disables dynamic page loading (useful if some plugins don’t work with it).
+
+    no_drawer: If true, disables the sidebar drawer.
+
+    no_navbar: If true, disables the auto-hiding navbar (replaces it with a static one).
+
+    no_search: If true, disables the built-in search feature.
+
+    no_inline_css: If true, disables inlining CSS in the <head>, which can speed up builds.
+
+    no_page_style: If true, disables per-page accent color changes (can speed up builds).
+
+    no_break_layout: If true, code blocks and tables will not break out of the content width.
+
+    no_toc: If true, disables the dynamic Table of Contents on large screens.
+
+    no_third_column: If true, disables the third column on large screens (all content stays centered).
+
+    no_large_headings: If true, disables oversized headlines on large screens.
+
+    no_structured_data: If true, disables machine-readable resume and project data.
+
+    no_theme_color: If true, disables the theme-color meta tag.
+
+    no_breadcrumbs: If true, disables breadcrumbs above the title.
+
+    use_lsi: If true, uses Jekyll’s related posts algorithm for “Related Posts.”
+
+    cookies_banner: If true, shows a cookie consent banner when using Google Analytics.
+
+    advertise: If true, adds a “Powered by Hydejack” link in the footer (PRO only).
+
+    hide_dates / hide_last_modified: If true, hides post dates or last modified dates (PRO only).
+
+    dark_mode:
+
+        always: If true, always uses dark mode.
+        dynamic: If true, uses dark mode based on the visitor’s OS preference.
+        icon: If true, allows visitors to switch between light and dark mode.
+
+    offline: Experimental. Enables service worker support for offline use (advanced users only).
+
+- Collections:
+
+    Defines custom content groups (collections) for your site.
+        -featured_categories: For special categories, with URLs like /:name/.
+        -featured_tags: For special tags, with URLs like /tag-:name/.
+        -projects: For project items, with URLs like /projects/:path/.
+        -output: true means Jekyll will generate a page for each item in the collection.
+
+- File inclusion/exclusion:
+    -exclude:Lists files and folders that Jekyll should ignore when building the site (e.g., caches, config files, vendor, etc.).
+    -include:Lists files or folders that should be included in the site build, even if they
+    are normally ignored (e.g., _routes.json, .well-known, LICENSE.md).
+
+- Plugins:
+    Lists Jekyll plugins to extend site functionality, such as:
+        -jekyll-feed: RSS feed generation.
+        -jekyll-paginate: Pagination for blog posts.
+        -jekyll-seo-tag: SEO meta tags.
+        -jekyll-sitemap: Sitemap generation.
+        -And others for layouts, redirects, relative links, etc.
+
+- SEO tag
+    -SEO Tag settings: (Commented out) Options for verifying site ownership with Google, Bing, Alexa, 
+    Yandex, and for setting up Twitter and Facebook meta tags.
+    -social: (Commented out) Lets you define your name and social links for SEO and sharing.
+
+
+- Plugin config:
+    Custom settings for how plugins handle front matter, README files, relative links, title extraction, 
+    HTML compression, and SASS output.
+
+- Jekyll compose defaults
+    Sets default front matter for new drafts, posts, and projects created with the jekyll-compose plugin 
+    (e.g., default layout, description, image, and links).
+
+
+
+
+
+
+
+
