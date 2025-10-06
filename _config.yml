@@ -69,7 +69,7 @@ menu:
     url:               /docs/
   - title:             About
     url:               /about/
-  - title:             Portfolion showcase
+  - title:             Portfolio
     url:               /portfolio/ 
 
 
@@ -319,13 +319,6 @@ collections:
 
   featured_tags:
     permalink:         /tag-:name/
-    output:            true
-
-  projects: # this is the name for the directory _projects
-    # Set the SOURCE path relative to the root of the site (where _config.yml is)
-    path:             portfolio/_projects # with this, you can have the folder _projects inside another folder
-                                          # If you want to have the folder _projects at the root, you don't need to set 'path'.
-    permalink:         /projects/:path/
     output:            true
 
 
