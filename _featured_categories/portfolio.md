@@ -302,13 +302,15 @@ las tablas anteriores funcionales.
 --------------------------------------------------------------------------------
 -->
 
-
+# TABLA OPTIMIZADA CHATGPT
 <!--
 Le he pedido a chargpt que actualice la forma de trabajar y me ha dado este codigo, aun 
 falta por refiniar para que su estructurea planteada encaje con la que ya hay
 -->
 
-{% include gallery.html collection=site.projects %} 
+<!-- {% include gallery.html collection=site.projects %} -->
+{% include gallery.html collection=site.categories.projects %}
+
 
 <!-- This is Liquid syntax (Jekyll’s templating language).
 It inserts the contents of _includes/gallery.html into this page and passes in a variable:

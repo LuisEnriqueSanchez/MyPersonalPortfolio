@@ -322,8 +322,8 @@ collections:
     output:            true
   
   projects: #My custom collection
-    output: true
     permalink: /projects/:title/
+    output: true
 
 
 # File inclusion/exclusion

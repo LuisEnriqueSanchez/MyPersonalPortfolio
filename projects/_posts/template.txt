@@ -3,11 +3,32 @@ Create a file with this name structure:
 Added to that, the front matter of the file has to be as shown:
 
 ---
-title: postTitle
-image: /assets/img/blog/H101.png #change this route
-description: Post small description
-date: YYYY-MM-DD
-layout: post # this CAN NOT be changed
-collection: projects #collection associated to the slug in the main file "portfolio.md"
+#OBLIGATORIO
+
+layout: post
+title: Meridian Battery
+date: 2025-04-01
+image: /assets/img/projects/meridian-battery/main.jpg
+permalink: /URLpersonalizada/
+
+
+#OPCIONAL
+
+description: >
+  Optimized high-voltage battery pack for UAVs.
+category: [projects, battery] #Categorías del post (ej: [projects, battery]) para filtrado o tags automáticos.
+tags: [CFD, CAD, optimization] #Tags adicionales para búsqueda o filtrado.
+sitemap: false #Si se debe incluir en el sitemap (archivo que lista todas las páginas, vídeos y otros contenidos de un sitio web)
+hide_last_modified: true #Si se oculta la fecha de última modificación en el layout.
+feature: true #Si se marca como proyecto destacado o destacado en navegación.
+author: Luis Sanchez
+client: Hyperloop Team #Nombre del cliente o proyecto asociado (si aplica).
+tech: [CFD, CAD, Battery Design, Testing] #Tecnologías usadas
+external_link: https://example.com/project
+github: https://github.com/LuisEnriqueSanchez/MeridianBattery #URL al repositorio del proyecto.
+video: https://www.youtube.com/embed/example #URL de video embebido (YouTube, Vimeo, etc.).
+gallery: #Lista de imágenes adicionales para un slider o galería interna.
+  - /assets/img/projects/meridian-battery/1.jpg
+  - /assets/img/projects/meridian-battery/2.jpg
 ---
 
