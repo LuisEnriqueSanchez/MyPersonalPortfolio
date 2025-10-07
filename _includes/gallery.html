@@ -1,0 +1,70 @@
+{% if include.collection and include.collection.size > 0 %}
+  {% assign posts = include.collection | sort: 'date' | reverse %}
+
+  <div class="gallery-grid">
+    {% for post in posts %}
+      <div class="gallery-item">
+        <a href="{{ post.url | relative_url }}" class="gallery-link">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          {% endif %}
+          <h3>{{ post.title }}</h3>
+          {% if post.description %}
+            <p>{{ post.description }}</p>
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+{% else %}
+  <p>No projects found in this collection.</p>
+{% endif %}
+
+<style>
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.gallery-item {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.gallery-item img {
+  width: 90%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+  filter: brightness(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.gallery-item h3 {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.gallery-item p {
+  font-size: 0.95rem;
+  color: #666;
+}
+</style>

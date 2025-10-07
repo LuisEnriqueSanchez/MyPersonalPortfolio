@@ -320,6 +320,10 @@ collections:
   featured_tags:
     permalink:         /tag-:name/
     output:            true
+  
+  projects: #My custom collection
+    output: true
+    permalink: /projects/:title/
 
 
 # File inclusion/exclusion

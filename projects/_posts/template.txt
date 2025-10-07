@@ -1,0 +1,13 @@
+Create a file with this name structure:
+    YYYY-MM-DD-filename.md
+Added to that, the front matter of the file has to be as shown:
+
+---
+title: postTitle
+image: /assets/img/blog/H101.png #change this route
+description: Post small description
+date: YYYY-MM-DD
+layout: post # this CAN NOT be changed
+collection: projects #collection associated to the slug in the main file "portfolio.md"
+---
+
