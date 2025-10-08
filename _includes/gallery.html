@@ -1,70 +1,117 @@
-{% if include.collection and include.collection.size > 0 %}
-  {% assign posts = include.collection | sort: 'date' | reverse %}
+<!-- 
+------------------------------------------------------------------------------
+  GALLERY INCLUDE
+  - Número fijo de columnas definido dentro del archivo.
+  - Cambia el valor de `gallery_columns` abajo (1, 2, 3, 4...).
+------------------------------------------------------------------------------
+-->
 
-  <div class="gallery-grid">
-    {% for post in posts %}
-      <div class="gallery-item">
-        <a href="{{ post.url | relative_url }}" class="gallery-link">
-          {% if post.image %}
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-          {% endif %}
-          <h3>{{ post.title }}</h3>
-          {% if post.description %}
-            <p>{{ post.description }}</p>
-          {% endif %}
-        </a>
-      </div>
-    {% endfor %}
-  </div>
+{% assign gallery_columns = 3 %}  <!-- {# ← Cambia este valor: 1, 2, 3, 4... #} -->
 
-{% else %}
-  <p>No projects found in this collection.</p>
-{% endif %}
+{% if include.collection and include.collection.size > 0 %} <!-- Ensure a collection is specified and has items --> 
+  {% assign posts = include.collection | sort: 'date' | reverse %} <!-- Sort posts by date, newest first --> 
 
-<style>
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-  width: 80%;
-  margin: 0 auto;
-  padding: 1rem 0;
+  <div class="gallery-grid gallery-cols-{{ gallery_columns }}"> <!-- Start of the gallery grid --> 
+    {% for post in posts %} <!-- Loop through each post in the collection --> 
+      <div class="gallery-item"> <!-- Individual gallery item --> 
+        <a href="{{ post.url | relative_url }}" class="gallery-link"> <!-- Link to the post --> 
+          {% if post.image %} <!-- Check if the post has an image --> 
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}"> <!-- Display the image --> 
+          {% endif %} <!-- End if for image --> 
+          <h3>{{ post.title }}</h3> <!-- Display the post title --> 
+          {% if post.description %} <!-- Check if the post has a description --> 
+            <p>{{ post.description }}</p> <!-- Display the description --> 
+          {% endif %} <!-- End if for description --> 
+        </a> <!-- End of the link --> 
+      </div> <!-- End of the gallery item --> 
+    {% endfor %} <!-- End of the loop --> 
+  </div> <!-- End of the gallery grid --> 
+
+{% else %} <!-- If no collection is specified or it's empty --> 
+  <p>No projects found in this collection.</p> <!-- Display a message --> 
+{% endif %} <!-- End if for collection check --> 
+
+<style> /* Gallery Styles */
+
+.gallery-grid { /* Container for the gallery */
+  display: grid; /* Use CSS Grid for layout */
+  gap: 2.5rem; /* More breathing space between items */
+  width: 90%; /* Use more screen width for larger images */
+  max-width: 1600px; /* Keep content centered and readable */
+  margin: 0 auto; /* Center the gallery */
+  padding: 3rem 0; /* Vertical padding */
 }
 
-.gallery-item {
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* =====================
+   COLUMNAS FIJAS + RESPONSIVE
+   ===================== */
+.gallery-cols-1 {
+  grid-template-columns: repeat(1, minmax(400px, 1fr));
+}
+.gallery-cols-2 {
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+}
+.gallery-cols-3 {
+  grid-template-columns: repeat(3, minmax(380px, 1fr));
+}
+.gallery-cols-4 {
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
 }
 
-.gallery-item:hover {
-  transform: scale(1.03);
+/* Make it adapt on smaller screens */
+@media (max-width: 1300px) {
+  .gallery-cols-3 {
+    grid-template-columns: repeat(2, minmax(360px, 1fr));
+  }
+}
+@media (max-width: 850px) {
+  .gallery-cols-3,
+  .gallery-cols-2 {
+    grid-template-columns: repeat(1, minmax(340px, 1fr));
+  }
 }
 
-.gallery-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+/* =====================
+   ESTILOS GENERALES
+   ===================== */
+
+.gallery-item { /* Individual gallery item */
+  text-align: center; /* Center text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
 
-.gallery-item img {
-  width: 90%;
-  height: auto;
-  border-radius: 12px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+.gallery-item:hover { /* Hover effect for the item */
+  transform: scale(1.03); /* Slightly enlarge the item */
 }
 
-.gallery-item:hover img {
-  filter: brightness(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+.gallery-link { /* Link styles */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+  display: block; /* Make the link a block element */
 }
 
-.gallery-item h3 {
-  font-weight: 600;
+.gallery-item img { /* Image styles */
+  width: 100%; /* Fill its grid cell */
+  max-width: 500px; /* Keep them visually large */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 14px; /* Rounded corners */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effects */
+}
+
+.gallery-item:hover img { /* Hover effect for the image */
+  filter: brightness(1.07); /* Slightly brighten the image */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18); /* Add subtle shadow */
+}
+
+.gallery-item h3 { /* Title styles */
+  font-weight: 600; /* Semi-bold font */
+  margin-top: 1rem; /* Space above the title */
+  font-size: 1.2rem; /* Slightly larger text */
+}
+
+.gallery-item p { /* Description styles */
+  font-size: 1rem; /* Comfortable reading size */
+  color: #555; /* Slightly darker gray for better contrast */
   margin-top: 0.5rem;
-}
-
-.gallery-item p {
-  font-size: 0.95rem;
-  color: #666;
 }
 </style>

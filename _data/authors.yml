@@ -27,9 +27,11 @@ luisen: #original: author1:
   # Rearrange to change the order in which they appear
   # You can also provide an absolute URL (starting with https://) instead of usernames
   social:
-    twitter:         <username>
-    github:          <username>
-    # email:           <mail@domain.tld>
+    # linkedin:        social:
+    linkedin:          https://www.linkedin.com/in/luisenrique-sanchez
+    email:             luisensangut@gmail.com
+    # twitter:         <username>
+    # github:          <username>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -58,7 +60,6 @@ luisen: #original: author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
