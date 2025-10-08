@@ -12,3 +12,9 @@
     margin: 1rem 0;
   }
 }
+// Botón de descarga del CV en la esquina superior derecha
+.cv-download { 
+  float: right;
+  margin-left: 20px; /* Espacio entre el botón y el texto a la izquierda */
+  margin-top: 0.5rem; /* Ajuste vertical para alinearse con el nombre/título */
+}

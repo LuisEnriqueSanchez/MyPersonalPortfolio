@@ -8,11 +8,12 @@ luisen: #original: author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    
-    Open `_data/authors.yml` to edit this text.
+    Aerospace Engineer specialising in Advanced Mechanical Design and CFD.
+    My purpose lies in R&D and cutting-edge technology, taking on challenges
+    that constantly force me to expand my knowledge.
+    My unique value is the simultaneous integration of aerodynamic design with
+    structural validation, striving for excellence, continuous improvement, and
+    automation in every project.
 
   # This photo will be used in the about section
   picture:
