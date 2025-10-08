@@ -1,0 +1,48 @@
+Gallery Include Description
+
+This code snippet is a gallery include for a Jekyll-based site. It is designed to display a collection of posts in a responsive gallery layout. Each post represents an individual blog entry, and this gallery can be used to implement the list file for the blog.
+
+Key Features and Functionality:
+
+1. Configurable Columns
+   - The number of columns is defined by the variable gallery_columns at the top of the file.
+   - Supported values: 1, 2, 3, 4…
+   - Example: {% assign gallery_columns = 3 %} sets the gallery to 3 columns.
+
+2. Collection Handling
+   - The gallery expects a collection passed via include.collection.
+   - If the collection exists and contains posts, it will:
+     - Sort posts by date in descending order (newest first).
+     - Loop through each post to create individual gallery items.
+   - If no posts are found, it displays a fallback message: "No projects found in this collection."
+
+3. Gallery Item Structure
+   - Each item contains:
+     - A clickable link to the post URL.
+     - An optional image (post.image) if available.
+     - The post title (post.title).
+     - An optional description (post.description) if available.
+
+4. Responsive CSS Grid Layout
+   - Uses CSS Grid with a gap of 2.5rem between items.
+   - Fixed column classes (gallery-cols-1 to gallery-cols-4) define the number of columns.
+   - Media queries make the layout adapt to smaller screens:
+     - 3 columns → 2 columns → 1 column
+     - 2 columns → 1 column
+
+5. Styling and Hover Effects
+   - Items are centered and slightly enlarge on hover (transform: scale(1.03)).
+   - Images have rounded corners, brightness effect, and subtle shadows on hover.
+   - Titles and descriptions are styled for readability.
+
+How It Works:
+- The file first checks if a collection is provided and contains posts.
+- It sorts the posts by date (newest first).
+- Each post is looped through to create a gallery item with its image, title, and optional description.
+- The gallery is displayed using a CSS Grid layout that adapts to screen size.
+- Hover effects enhance interactivity for images and text.
+
+Usage:
+- Include this gallery file in your blog pages where you want to display posts.
+- Each post in the collection will appear as a gallery item with its image, title, and description.
+- This is the base gallery to implement the blog list file.

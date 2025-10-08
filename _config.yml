@@ -12,17 +12,12 @@
 # baseurl:               '/hydejack-starter-kit'
 
 
-
-
-
-
-
 # General settings
 # ---------------------------------------------------------------------------------------
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  es # idioma español
+lang:                  en # idioma español
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 Luis Enrique's portfolio #Original: Starter Kit
@@ -63,14 +58,13 @@ author:
 # Son los enlaces que aparecen en la barra lateral, que en este caso
 # son debajo del logo y el título en la pantalla principal.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
-  - title:             About
-    url:               /about/
+
   - title:             Portfolio
-    url:               /portfolio/ 
+    url:               /portfolio/
+
+  - title:             About me
+    url:               /about/
+
 
 
 # Add links to the footer.
