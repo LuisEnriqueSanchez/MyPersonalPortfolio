@@ -6,6 +6,6 @@ description: >
 category: projects
 sitemap: false
 hide_last_modified: true
-date: 2023-04-01
-image: /assets/img/blog/H200-real.png
+date: 2025-02-01
+image: /assets/img/blog/Horus/H200-real.png #need a change
 ---
