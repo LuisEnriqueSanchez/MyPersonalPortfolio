@@ -3,19 +3,19 @@
 layout: list
 
 # The title of the tag's page.
-title: Portfolio
+title: My personal projects
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
 slug: projects
 #Gives the blog what post are related to it. It needs a post with the same category
 
-order: 2 #Hydejack uses this to sort featured pages (those in _featured_categories/) in its navigation bar or sidebar. Lower numbers appear first (e.g., order: 1 might be “Blog,” order: 2 your “Portfolio”).If you omit it, order will follow file creation order — but setting it explicitly ensures control.
+order: 1 #Hydejack uses this to sort featured pages (those in _featured_categories/) in its navigation bar or sidebar. Lower numbers appear first (e.g., order: 1 might be “Blog,” order: 2 your “Portfolio”).If you omit it, order will follow file creation order — but setting it explicitly ensures control.
 
 
 image: /assets/img/blog/H101.png #This image acts as a preview thumbnail for the category (the portfolio section itself). Hydejack uses it when it lists featured categories or in previews (for example, on the homepage). It’s not mandatory, but highly recommended for consistent visuals.
 
 #URl en la que se genera este archivo https://tusitio.com/portfolio/
-permalink: /portfolio/
+permalink: /projects/
 
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
