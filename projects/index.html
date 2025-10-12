@@ -1,0 +1,35 @@
+---
+layout: page
+title: Project Archive
+permalink: /projects/
+description: A complete list of my Aeronautical Engineering projects.
+---
+
+<header class="page-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+        <p class="lead">{{ page.description }}</p>
+    {% endif %}
+</header>
+
+<div class="list__items">
+{% for post in site.posts %}
+  <div class="list__item">
+    <article class="archive-item box h-feed">
+      <h2 class="u-url archive-item-title p-name" itemprop="headline">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      <p class="archive-item-date">
+        <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ post.date | date: "%B %d, %Y" }}
+        </time>
+      </p>
+      {% if post.subtitle %}
+        <p class="archive-item-subtitle p-summary" itemprop="abstract">{{ post.subtitle }}</p>
+      {% else %}
+        <p class="archive-item-excerpt p-summary" itemprop="abstract">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+      {% endif %}
+    </article>
+  </div>
+{% endfor %}
+</div>
