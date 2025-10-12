@@ -18,7 +18,7 @@
           {% if post.image %} <!-- Check if the post has an image --> 
             <img src="{{ post.image | relative_url }}" alt="{{ post.title }}"> <!-- Display the image --> 
           {% endif %} <!-- End if for image --> 
-          <h3>{{ post.title }}</h3> <!-- Display the post title --> 
+          <h3>{{ post.data.title | default: post.title }}</h3> <!-- Display the post title --> 
           {% if post.description %} <!-- Check if the post has a description --> 
             <p>{{ post.description }}</p> <!-- Display the description --> 
           {% endif %} <!-- End if for description --> 

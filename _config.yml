@@ -318,9 +318,6 @@ collections:
     permalink:         /tag-:name/
     output:            true
   
-  #projects: #My custom collection
-  #  permalink: /projects/:title/
-  #  output: true
   
 
 
@@ -403,9 +400,20 @@ readme_index:
 relative_links:
   collections:         true
 
+# ------------------------------------------------------------
+# titles_from_headings
+# ------------------------------------------------------------
+# Esta configuración controla si Hydejack/Jekyll sobrescribe el
+# título de una página o post usando el primer heading encontrado
+# en el contenido (por ejemplo, la primera línea del markdown)
+# en lugar de usar el 'title' definido en el front matter.
 titles_from_headings:
-  strip_title:         true
-  collections:         true
+  strip_title:         true # Limpia caracteres especiales de los headings si se usa.
+  collections:         [] #true
+    #    - Lista de colecciones a las que se aplicará la funcionalidad.
+    #    - Dejando la lista vacía, ningún post ni proyecto reemplazará
+    #      su título con el primer heading, por lo que siempre se usa
+    #      el 'title' del front matter.
 
 compress_html:
   comments:            ["<!--", "-->"]
