@@ -1,6 +1,5 @@
 ---
 layout: about
-image: /assets/img/blog/hydejack-9.jpg
 description: >
   A boutique Jekyll theme for hackers, nerds, and academics,
   with a focus on personal sites that are meant to impress.
@@ -19,8 +18,8 @@ redirect_from:
 My professional motivation is centred on **Research & Development (R&D)**, actively exploring the *state-of-the-art* in engineering. I do not simply seek to apply existing methods; I pursue challenges that force me to learn new technologies and discover how to implement them in real-world projects, especially in the field of aerodynamics and fluid dynamics. It is within this space of the unknown where I find my greatest passion.
 
 ## My Superpower: Structural-Aerodynamic Fusion
-If my role were to be reduced to a single capability, it would be the **integration of the aesthetic with the practical**. My expertise allows me to:
-* **Design an aerodynamic surface** using CFD, ensuring maximum performance.
+If my role were to be reduced to a single capability, it would be the **integration of the aesthetic with the practical**. My knowledge allows me to:
+* **Design an aerodynamic surface** using CFD, ensuring searching performance.
 * **Simultaneously design the supporting structure** (using CAD) that guarantees the integrity of those complex forms.
 
 This integrated approach minimises costly iterations, ensuring that every innovative design is also a structurally viable component ready for materialisation or flight.

@@ -10,7 +10,7 @@ date: 2023-08-01
 image: /assets/img/blog/Zeleros/Generic_aerodynamic_testbench.png
 ---
 
-### 1. Executive Summary
+---
 
 During my time at Zeleros, I contributed to the **design and implementation of an aerodynamic test bench** for a scaled Hyperloop vehicle. The primary goal was to characterise nozzle flow behaviour and optimise aerodynamic performance under varying operating conditions. This project required precise **mechanical design, sensor integration**, and attention to airflow characteristics.
 
@@ -18,7 +18,7 @@ During my time at Zeleros, I contributed to the **design and implementation of a
 
 ---
 
-### 2. Problem Definition and Technical Requirements
+### Problem Definition and Technical Requirements
 
 The bench needed to replicate the **aerodynamic conditions** of high-speed flow and reduced pressure in a controlled environment, allowing accurate measurements for nozzle optimisation.
 
@@ -28,7 +28,7 @@ The bench needed to replicate the **aerodynamic conditions** of high-speed flow 
 
 ---
 
-### 3. Process, Design, and Methodology
+### Process, Design, and Methodology
 
 * **CAD Modelling & Layout:** Designed the entire bench in Siemens NX, considering both mechanical constraints and integration with measurement devices.
 * **Sensor & Data Acquisition Planning:** Developed positions for pressure and velocity sensors to collect accurate flow data, considering turbulence minimisation.
@@ -36,14 +36,14 @@ The bench needed to replicate the **aerodynamic conditions** of high-speed flow 
 
 ---
 
-### 4. Results and Conclusions
+### Results and Conclusions
 
 The test bench successfully delivered **reliable aerodynamic data**, which informed nozzle design and vehicle optimisation.
 
 * **Key Competency:** Demonstrated skills in **mechanical design for fluid testing**, sensor placement, and bench prototyping.
 * **Outcome:** Provided actionable insights on nozzle flow patterns and aerodynamic improvements for subsequent vehicle designs.
 
-### 5. Technologies and Programmes Used
+### Technologies and Programmes Used
 
 | Technical Area | Programmes / Tools | Engineering Focus |
 | :--- | :--- | :--- |

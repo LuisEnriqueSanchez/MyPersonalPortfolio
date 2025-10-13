@@ -10,14 +10,14 @@ date: 2023-04-01
 image: /assets/img/blog/Zeleros/Azimut_Battery_resized.png
 ---
 
-### 1. Executive Summary
+---
 
 In the **Azimut Battery project** at Zeleros, I was responsible for the **manufacturing scheme** of a high-power battery pack.  
 The focus was on **integrating the mechanical structure with electrical components**, ensuring **compliance with safety standards** and facilitating **efficient assembly and maintenance**.
 
 ---
 
-### 2. Problem Definition and Technical Requirements
+### Problem Definition and Technical Requirements
 
 - **Packaging Constraints:** The battery needed to fit within strict dimensional envelopes for vehicle integration.  
 - **Safety & Compliance:** High-voltage electrical insulation and vibration resistance were critical requirements.  
@@ -25,7 +25,7 @@ The focus was on **integrating the mechanical structure with electrical componen
 
 ---
 
-### 3. Process, Design, and Methodology
+### Process, Design, and Methodology
 
 - **CAD Mechanical Design:** Full 3D layout of the battery pack, considering space for modules, wiring harnesses, and structural supports.  
 - **Manufacturing Scheme:** Designed assembly sequence and identified potential interference points to streamline production.  
@@ -34,7 +34,7 @@ The focus was on **integrating the mechanical structure with electrical componen
 
 ---
 
-### 4. Technical Results and Conclusions
+### Technical Results and Conclusions
 
 - **Integrated Layout:** The design provided a fully manufacturable and serviceable battery pack.  
 - **Safety & Reliability:** Ensured high-voltage insulation and vibration resilience through mechanical structure optimisation.  
@@ -42,7 +42,7 @@ The focus was on **integrating the mechanical structure with electrical componen
 
 ---
 
-### 5. Technologies and Programmes Used
+### Technologies and Programmes Used
 
 | Technical Area | Programmes / Tools | Engineering Focus |
 | :--- | :--- | :--- |
