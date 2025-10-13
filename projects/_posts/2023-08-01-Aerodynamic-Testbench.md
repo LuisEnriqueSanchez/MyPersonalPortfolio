@@ -7,7 +7,7 @@ category: projects
 sitemap: false
 hide_last_modified: true
 date: 2023-08-01
-image: assets\img\blog\Zeleros\Generic_aerodynamic_testbench.png
+image: assets/img/blog/Zeleros/Generic_aerodynamic_testbench.png
 ---
 
 ### 1. Executive Summary
