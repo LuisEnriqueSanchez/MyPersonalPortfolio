@@ -10,7 +10,7 @@ date: 2025-03-01
 image: /assets/img/blog/Zeleros/Generic_powertrain_testbench.png
 ---
 
-### 1. Executive Summary
+---
 
 In this project at Zeleros, I contributed to the **mechanical design and layout of a powertrain testbench** intended for evaluating electric motors and battery regeneration systems. The focus was on **optimising the layout, ensuring safe operation**, and integrating all necessary sensors and equipment.
 
@@ -18,7 +18,7 @@ In this project at Zeleros, I contributed to the **mechanical design and layout 
 
 ---
 
-### 2. Problem Definition and Technical Requirements
+### Problem Definition and Technical Requirements
 
 The bench needed to replicate operational conditions of high-performance electric motors and battery paralelization while allowing safe testing of **regenerative braking and energy transfer**.
 
@@ -28,7 +28,7 @@ The bench needed to replicate operational conditions of high-performance electri
 
 ---
 
-### 3. Process, Design, and Methodology
+### Process, Design, and Methodology
 
 * **CAD Modelling:** Developed the complete bench layout in Siemens NX, accounting for space constraints and integration with sensors.
 * **Integration of Components:** Designed motor mounts and cable routing to minimise interference and ensure correct operation.
@@ -36,14 +36,14 @@ The bench needed to replicate operational conditions of high-performance electri
 
 ---
 
-### 4. Results and Conclusions
+### Results and Conclusions
 
 The testbench provided **reliable performance data** for motor evaluation and regenerative system testing. Also to accomplish the paralelization task for the team.
 
 * **Key Competency:** Demonstrated expertise in **mechanical design, system integration, and safety considerations**.
 * **Outcome:** Delivered a functional and safe bench that enabled accurate testing and data acquisition for electric powertrain components.
 
-### 5. Technologies and Programmes Used
+### Technologies and Programmes Used
 
 | Technical Area | Programmes / Tools | Engineering Focus |
 | :--- | :--- | :--- |

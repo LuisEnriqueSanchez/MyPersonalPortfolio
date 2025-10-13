@@ -10,14 +10,14 @@ date: 2023-02-02
 image: /assets/img/blog/Zeleros/HyperTrack-Sagunto-9-opt.jpg
 ---
 
-### 1. Executive Summary
+---
 
 In the early stage of the **Zeleros propulsion project**, I focused on **mechanical optimisation of components** for the magnetic propulsion testbench.  
 The main objective was to improve the **alignment and performance** of critical mechanical parts, ensuring precise interaction between components under high-speed operation conditions.
 
 ---
 
-### 2. Problem Definition and Technical Requirements
+### Problem Definition and Technical Requirements
 
 - **Component Alignment:** The main challenge was achieving precise alignment of the moving parts in the testbench to reduce mechanical losses and wear.  
 - **Structural Integrity:** Components needed to withstand operational loads and maintain alignment under dynamic conditions.  
@@ -25,7 +25,7 @@ The main objective was to improve the **alignment and performance** of critical 
 
 ---
 
-### 3. Process, Design, and Methodology
+### Process, Design, and Methodology
 
 - **CAD Design:** Detailed redesign of critical components in **Siemens NX**, focusing on tolerances and fit.  
 - **Iterative Improvement:** Adjusted geometry and interfaces to minimise misalignment and reduce mechanical friction.  
@@ -36,7 +36,7 @@ The main objective was to improve the **alignment and performance** of critical 
 
 ---
 
-### 4. Technical Results and Conclusions
+### Technical Results and Conclusions
 
 - **Enhanced Alignment:** Optimisation improved component fit and reduced operational misalignment.  
 - **Key Learning:** Developed experience in precise mechanical design for high-speed testbench components.  
@@ -44,7 +44,7 @@ The main objective was to improve the **alignment and performance** of critical 
 
 ---
 
-### 5. Technologies and Programmes Used
+### Technologies and Programmes Used
 
 | Technical Area | Programmes / Tools | Engineering Focus |
 | :--- | :--- | :--- |

@@ -8,14 +8,10 @@ sitemap: false
 hide_last_modified: true
 date: 2025-04-01
 image: /assets/img/blog/Zeleros/Generic_battery_project.png
-excerpt: ""
 ---
 
 
-
-
-
-### 1. Executive Summary
+---
 
 This project at Zeleros involved the **complete mechanical design and system integration** of a high-density **21 kWh battery**. My role included **module layout design, mechanical structure design, harness routing, and full integration of subsystems** developed by other teams.
 
@@ -23,7 +19,7 @@ This project at Zeleros involved the **complete mechanical design and system int
 
 ---
 
-### 2. Problem Definition and Technical Requirements
+### Problem Definition and Technical Requirements
 
 The battery design had to meet several critical constraints:
 
@@ -34,7 +30,7 @@ The battery design had to meet several critical constraints:
 
 ---
 
-### 3. Process, Design, and Methodology
+### Process, Design, and Methodology
 
 * **CAD Layout:** Designed the battery housing, modules, and cable routing using Siemens NX.
 * **Integration:** Coordinated closely with electrical and thermal teams to ensure full subsystem compatibility.
@@ -43,14 +39,14 @@ The battery design had to meet several critical constraints:
 
 ---
 
-### 4. Results and Conclusions
+### Results and Conclusions
 
 The **Meridian battery pack** was delivered as a fully integrated mechanical solution, ready for assembly and testing:
 
 * **Key Competency:** Demonstrated ability to **integrate multiple subsystems** within tight mechanical and electrical constraints.
 * **Outcome:** Achieved a reliable, maintainable, and mechanically robust battery design.
 
-### 5. Technologies and Programmes Used
+### Technologies and Programmes Used
 
 | Technical Area | Programmes / Tools | Engineering Focus |
 | :--- | :--- | :--- |
