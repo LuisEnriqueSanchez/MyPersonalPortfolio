@@ -2,7 +2,7 @@
 layout: post
 title: Aerdynamic testbench
 description: >
-  Design and operation of an aerodynamic test bench for scaled Hyperloop vehicles, focused on measuring nozzle flow behaviour and optimising aerodynamic performance.
+  Design and operation of an aerodynamic test bench for scaled Hyperloop vehicles, focused on measuring nozzle flow behaviour and optimising aerodynamic performance. (Image not real)
 category: projects
 sitemap: false
 hide_last_modified: true
@@ -20,7 +20,7 @@ During my time at Zeleros, I contributed to the **design and implementation of a
 
 ### 2. Problem Definition and Technical Requirements
 
-The bench needed to replicate the **aerodynamic conditions** of high-speed flow in a controlled environment, allowing accurate measurements for nozzle optimisation.
+The bench needed to replicate the **aerodynamic conditions** of high-speed flow and reduced pressure in a controlled environment, allowing accurate measurements for nozzle optimisation.
 
 * **Flow Characterisation:** Ensure realistic mass flow and pressure conditions for testing nozzle performance.
 * **Sensor Integration:** Strategically position sensors to capture flow data without disturbing the airflow.
@@ -32,7 +32,7 @@ The bench needed to replicate the **aerodynamic conditions** of high-speed flow 
 
 * **CAD Modelling & Layout:** Designed the entire bench in Siemens NX, considering both mechanical constraints and integration with measurement devices.
 * **Sensor & Data Acquisition Planning:** Developed positions for pressure and velocity sensors to collect accurate flow data, considering turbulence minimisation.
-* **Prototyping & Iteration:** Built a scaled prototype for preliminary testing, iterating geometry to refine nozzle flow distribution.
+* **Prototyping & Iteration:** Prepared drawings and schemes for a scaled prototype for preliminary testing, iterating geometry to refine nozzle flow distribution.
 
 ---
 

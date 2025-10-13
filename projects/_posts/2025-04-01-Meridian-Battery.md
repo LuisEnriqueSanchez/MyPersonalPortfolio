@@ -2,7 +2,7 @@
 layout: post
 title: Meridian Battery
 description: >
-  Mechanical design and system integration of a high-density 21 kWh battery, including module layout, harness routing, and assembly optimisation.
+  Mechanical design and system integration of a high-density 21 kWh battery, including module layout, harness routing, and assembly optimisation. (Image not real)
 category: projects
 sitemap: false
 hide_last_modified: true
@@ -10,9 +10,13 @@ date: 2025-04-01
 image: /assets/img/blog/Zeleros/Generic_battery_project.png
 ---
 
+
+
+
+
 ### 1. Executive Summary
 
-This project at Zeleros involved the **complete mechanical design and system integration** of a high-density **21 kWh battery** for high-performance electric vehicles. My role included **module layout design, harness routing, and full integration of subsystems** developed by other teams.
+This project at Zeleros involved the **complete mechanical design and system integration** of a high-density **21 kWh battery**. My role included **module layout design, mechanical structure design, harness routing, and full integration of subsystems** developed by other teams.
 
 <!-- Recommended Image: CAD render or top view of the battery pack highlighting modules and harness routing. Keep confidential; use generic placeholders if necessary. -->
 
@@ -24,7 +28,7 @@ The battery design had to meet several critical constraints:
 
 * **Electrical Isolation:** Ensure safe distances between high-voltage components.
 * **Mechanical Integrity:** Guarantee structural support for cells and modules under vibration and impact loads.
-* **Integration:** Harmoniously combine power, control, and cooling subsystems within strict packaging limits.
+* **Integration:** Harmoniously combine power, mechanical, and control subsystems within strict packaging limits.
 * **Maintainability:** Facilitate assembly, disassembly, and future maintenance.
 
 ---
@@ -50,6 +54,6 @@ The **Meridian battery pack** was delivered as a fully integrated mechanical sol
 | Technical Area | Programmes / Tools | Engineering Focus |
 | :--- | :--- | :--- |
 | **CAD Design** | Siemens NX | Module layout, harness routing, battery pack assembly |
-| **Mechanical Analysis** | Static Checks (FEA optional) | Verification of mechanical integrity under operational loads |
+| **Mechanical Analysis** | Static Checks (Ansys) | Verification of mechanical integrity under operational loads |
 | **Integration** | Subsystem Coordination | Power, control, and cooling systems compatibility |
 | **Manufacturing Preparation** | Design for Assembly (DFA) | Ease of assembly, disassembly, and maintenance |
