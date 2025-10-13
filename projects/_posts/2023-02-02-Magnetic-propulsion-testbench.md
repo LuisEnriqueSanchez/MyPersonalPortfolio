@@ -32,6 +32,8 @@ The main objective was to improve the **alignment and performance** of critical 
 - **Verification:** Component dimensions and tolerances verified against testbench requirements to ensure reliable operation.  
 - *Optional: include images of components or testbench setup for illustration.*
 
+![Close view of testbench](/assets/img/blog/Zeleros/HyperTrack-Sagunto-8-opt.jpg)
+
 ---
 
 ### 4. Technical Results and Conclusions
@@ -49,3 +51,5 @@ The main objective was to improve the **alignment and performance** of critical 
 | **CAD Design** | Siemens NX | Component optimisation and tolerance control |
 | **Integration** | Testbench Setup | Mechanical fit and alignment |
 | **Verification** | Manual / Measurement Tools | Tolerance checking and operational validation |
+
+![Team view with a complete project](/assets/img/blog/Zeleros/Team-HyperTrack-Sagunto-1-1.png)

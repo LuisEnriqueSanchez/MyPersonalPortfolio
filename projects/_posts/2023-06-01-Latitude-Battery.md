@@ -15,7 +15,7 @@ image: /assets/img/blog/Zeleros/Latitude.png
 The **Latitude 50 kWh battery project** at Zeleros focused on **mechanical design, system integration, and thermal management** of a high-power energy storage system.  
 My role centred on **optimising module layout, mechanical supports, and harness routing**, ensuring compliance with vibration, thermal, and safety requirements.
 
-*Suggested image:* Front view of the battery pack (rendered or schematic), highlighting module placement and cable routing.
+<!--*Suggested image:* Front view of the battery pack (rendered or schematic), highlighting module placement and cable routing.-->
 
 ---
 
@@ -32,10 +32,10 @@ My role centred on **optimising module layout, mechanical supports, and harness 
 
 - **Mechanical Layout:** Developed module arrangement and support structures for optimal mechanical stability.  
 - **Harness Routing:** Planned cable paths to minimise resistance, avoid sharp bends, and simplify assembly and maintenance.  
-- **Thermal Considerations:** Ensured proper spacing for cooling airflow and heat dissipation.  
+- **Thermal Considerations:** Ensured proper spacing for cooling and heat dissipation.  
 - **Validation:** Static FEA simulations performed on critical supports to verify structural integrity under operational loads.
 
-*Suggested image:* CAD render showing battery internals with highlighted cable routing or module supports.
+![Latitude battery](/assets/img/blog/Zeleros/latitude_opened.png)
 
 ---
 

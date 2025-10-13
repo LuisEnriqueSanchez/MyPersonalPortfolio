@@ -12,7 +12,7 @@ image: /assets/img/blog/Zeleros/Azimut_Battery_resized.png
 
 ### 1. Executive Summary
 
-In the **Azimut Battery project** at Zeleros, I was responsible for the **mechanical design and manufacturing scheme** of a high-power battery pack.  
+In the **Azimut Battery project** at Zeleros, I was responsible for the **manufacturing scheme** of a high-power battery pack.  
 The focus was on **integrating the mechanical structure with electrical components**, ensuring **compliance with safety standards** and facilitating **efficient assembly and maintenance**.
 
 ---
@@ -38,7 +38,7 @@ The focus was on **integrating the mechanical structure with electrical componen
 
 - **Integrated Layout:** The design provided a fully manufacturable and serviceable battery pack.  
 - **Safety & Reliability:** Ensured high-voltage insulation and vibration resilience through mechanical structure optimisation.  
-- **Key Competency:** Demonstrated ability to **mechanically integrate complex subsystems** under strict packaging and safety constraints.
+- **Key Competency:** Demonstrated ability to **manufacture and assembly complex subsystems** under strict packaging and safety constraints.
 
 ---
 
@@ -46,7 +46,7 @@ The focus was on **integrating the mechanical structure with electrical componen
 
 | Technical Area | Programmes / Tools | Engineering Focus |
 | :--- | :--- | :--- |
-| **CAD Design** | Siemens NX | Mechanical layout and assembly sequence |
+| **Mechanical area** | Gant scheme | Component manufacture and assembly sequence |
 | **Integration** | Electrical and Power Modules | Space planning for modules, wiring, and cooling |
 | **Verification** | Mechanical Checks / Prototyping | Tolerance and fit verification for assembly and service |
 | **Manufacturing Planning** | DFM Principles | Optimisation for safe and efficient assembly |
